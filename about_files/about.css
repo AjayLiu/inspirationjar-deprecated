@@ -1,0 +1,52 @@
+.aboutIntro{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(152, 218, 184);
+}
+
+.aboutStory{
+    margin-top: 100px;
+    width: 100%;
+    height: 70%;
+}
+
+#jar{
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    margin-left: 50px;
+}
+
+#tree{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+#storyTitle{
+    width: 50%;
+    margin: auto 20px;
+	font-size: 4rem;
+}
+
+#storyContent{
+    margin-top: 40px;
+	font-weight: lighter;
+	font-size: 1.4rem;
+}
+
+@media screen and (max-width: 767px) {
+    #title{
+        margin: 0 auto;
+    }
+    #tree{
+        flex-direction: column;
+    }
+
+    #storyTitle{
+        width: 80%;
+        margin: auto;
+    }
+}

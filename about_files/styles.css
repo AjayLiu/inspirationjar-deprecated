@@ -1,0 +1,344 @@
+body,html {
+	margin:0px;
+	padding: 0px;
+	height: 100%;
+ 	width: 100%;
+	text-align: center;
+	color:black;
+	background-color: white;
+	z-index: -2;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+	background-color: orange;
+	z-index: 100;
+}
+
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+.navbar li{
+	list-style: none;
+	margin: 0 auto;
+}
+
+
+
+.navanchors{
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 80%;
+}
+
+.navbar ul li a {
+	color:white;
+	font-weight: bolder;
+	font-size: 1.3rem;
+}
+
+.navbar img{
+	position:absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 45px;
+	height: 45px;
+}
+
+.skewLeft{
+	position: relative;
+	left: -45px;
+}
+
+.intro{
+    z-index: -1;
+	padding: 50px 5px 0 5px;
+	text-align: center;
+}
+
+.intro p {
+	margin: 20px;
+}
+
+.intro strong{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+
+* {
+	font-family: Calibri, Trebuchet MS, sans-serif	;
+}
+
+
+.quote_container{
+	display: flex;
+	justify-content: center;
+}
+
+.quoteBlock{
+	margin-top: 10px;
+	height: 40vh;
+  	width: 70vw;
+	padding-top: 100px;
+	text-align: center;
+	position: relative;
+	background-image: url("/images/widePaper.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.quoteText{
+	margin: 0 auto 0 auto;
+	display: block;
+	font-size: 2vw;
+	width: 90%;
+	height: 40%;
+	overflow: auto;
+	word-wrap: break-word;
+}
+
+.buttons{
+	display: flex;
+	height: 15vh;
+	width: 70%;
+	margin: 0px auto 50px auto;
+	justify-content: space-around;
+}
+
+.button:hover{
+    text-decoration: underline;
+}
+
+.gratitudeRatings{
+	margin-top: 20px;
+	font-size: 1.2rem;
+	color: purple;
+}
+
+.button{
+	font-size: 2rem;
+	background: none!important;
+	border: none;
+	padding: 0!important;
+	/*optional*/
+	font-family: arial, sans-serif;
+	/*input has OS specific font-family*/
+	color: #069;
+	text-decoration: none;
+	cursor: pointer;
+	width: 10vh;
+	height: 10vh;
+	box-shadow: 4px 4px rgba(64, 61, 48, 0.39);
+	border-radius:15vh;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0 #666;
+  transform: translateY(4px);
+}
+
+#goodButton{
+	color: rgb(46, 197, 46);
+}
+#badButton{
+	color: rgb(170, 17, 17);
+}
+
+.reportButton{
+	right: 25px;
+	top: 25px;
+	width: 5vh;
+	height: 5vh;
+	position: absolute;
+}
+
+.favoriteButton{
+	left: 30px;
+	top: 30px;
+	width: 5vh;
+	height: 5vh;
+	position: absolute;
+}
+
+.deleteButton, .unlikeButton, .undislikeButton{
+	width: 5vh;
+	height: 5vh;
+}
+
+
+.unfavoriteButton{
+	width: 5vh;
+	height: 5vh;
+}
+
+
+#posts_root{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#posts_root .quoteBlock{
+	width: 80%;
+	height: 300px;
+}
+#posts_root .quoteText{
+	padding: 0 auto;
+	margin: 0 auto;
+	height: 150px;
+}
+#posts_root .gratitudeRatings{
+	margin: 0;
+}
+
+hr{
+	margin: 100px auto;
+}
+
+
+#prevPosts, #prevLikes, #prevDislikes, #prevFaves{
+	font-size: 30px;
+	margin: 30px;
+}
+
+.quoteEditBar{
+	display: flex;
+	margin: 25px;
+	justify-content: space-around;
+}
+
+.logoutButton{
+	margin:auto;
+	border:0;
+    background:transparent;
+  	cursor: pointer;
+	width: 64px;
+	height: 64px;
+}
+
+.loginStatus{
+    font-weight: bold;
+	font-size: 1.2rem;
+	margin: 20px auto;
+}
+
+.rememberMe{
+	margin: auto;
+	margin-top: 30px;
+	padding: auto;
+	width: 200px;
+	height: 50px;
+	font-size: 1.4rem;
+}
+#rememberCheckbox{
+	transform : scale(1.5);
+}
+#rememberLabel, #uniqueLabel{
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	cursor: pointer;
+}
+
+
+footer{
+    margin-top: 15px;
+    padding:15px;
+	background-color: rgb(205, 205, 205);
+}
+
+footer a {
+	color: black;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+	.quoteBlock{
+		width: 90vw;
+		padding-top: 50px;
+		height: 35vh;
+	}
+
+	.gratitudeRatings{
+		font-size: 1rem;
+	}
+
+	.quoteText{
+		height: 15vh;
+		font-size: 1rem;
+	}
+
+	.buttons{
+	}
+
+	.button{
+		font-size: 1rem;
+		width: 8vh;
+	    height: 8vh;
+	}
+
+	.reportButton{
+		right: 10px;
+		top: 10px;
+		width: 4vh;
+		height: 4vh;
+		position: absolute;
+	}
+
+	.favoriteButton{
+		left: 10px;
+		top: 10px;
+		width: 4vh;
+		height: 4vh;
+		position: absolute;
+	}
+
+	.navbar ul {
+		display: grid;
+		grid-template-columns: 200px 200px;
+		grid-row: auto auto;
+		grid-column-gap: 20px;
+		grid-row-gap: 10px;
+        padding: 0;
+    }
+
+	.quote_container{
+		/* scroll-snap-align: center; */
+	}
+
+    .intro {
+		/* scroll-snap-align: center; */
+        padding-top: 100px;
+    }
+
+	.tab{
+		/* scroll-snap-align: center; */
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#logo{
+		display: none;
+	}
+	.skewLeft{
+		position: static;
+	}
+}
